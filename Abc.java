@@ -7,6 +7,16 @@ class Abc
 			System.out.println("Hello Wissen");
 
 		System.out.println(checkEven(17));
+		System.out.println(checkPrime(13));
+	}
+	public static boolean checkPrime(int n)
+	{
+		for(int i=2;i<=n/2;i++)
+		{
+			if(n%i==2)
+				return false;
+		}
+		return true;
 	}
 
 	static boolean checkEven(int number)
